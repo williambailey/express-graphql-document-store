@@ -1,0 +1,48 @@
+{
+  "name": "express-graphql-document-store",
+  "version": "1.0.0",
+  "description": "Document/operation storage for express-graphql",
+  "main": "./dist/index.js",
+  "directories": {
+    "lib": "./dist"
+  },
+  "types": "./dist/index.d.ts",
+  "engines": {
+    "node": ">= 10.x"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "npm run lint && npm run tsc && npm run test",
+    "lint": "eslint ./src --ext .ts --max-warnings 0",
+    "test": "ava",
+    "tsc": "tsc"
+  },
+  "keywords": [
+    "graphql",
+    "document",
+    "operation",
+    "store",
+    "storage"
+  ],
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "@types/graphql": "^14.2.0",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "@types/express-graphql": "^0.8.0",
+    "ava": "^1.4.1",
+    "express-graphql": "^0.8.0",
+    "eslint": "^5.16.0",
+    "graphql": "^14.2.0",
+    "typescript": "^3.4.5"
+  },
+  "peerDependencies": {
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.2.0"
+  },
+  "typings": "src"
+}

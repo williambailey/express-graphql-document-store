@@ -1,0 +1,19 @@
+{
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "typescript",
+            "autoFix": true
+        },
+        {
+            "language": "typescriptreact",
+            "autoFix": true
+        }
+    ],
+    "files.exclude": {
+        "**/dist": true,
+        "**/node_modules": true
+    },
+    "typescript.tsdk": "node_modules/typescript/lib"
+}
