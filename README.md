@@ -1,7 +1,7 @@
 GraphQL persisted document loader for [`express-graphql`](https://www.npmjs.com/package/express-graphql)
 =======================================================
 
-[![Build Status](https://travis-ci.org/williambailey/express-graphql-document-store.svg?branch=master)](https://travis-ci.org/williambailey/express-graphql-document-store)
+[![Build Status](https://travis-ci.com/williambailey/express-graphql-document-store.svg?branch=master)](https://travis-ci.com/williambailey/express-graphql-document-store)
 
 This library provides a mechanism to bring persisted documents/queries to [`express-graphql`](https://www.npmjs.com/package/express-graphql).
 
