@@ -1,7 +1,7 @@
 {
   "name": "express-graphql-document-store",
   "version": "1.0.0",
-  "description": "Document/operation storage for express-graphql",
+  "description": "Provides a mechanism to bring persisted documents/queries to express-graphql",
   "main": "./dist/index.js",
   "directories": {
     "lib": "./dist"
@@ -12,10 +12,12 @@
   },
   "files": [
     "dist",
+    "src",
     "README.md",
     "LICENSE"
   ],
   "scripts": {
+    "clean": "rm -rf dist tsconfig.tsbuildinfo",
     "build": "npm run lint && npm run tsc && npm run test",
     "lint": "eslint ./src --ext .ts --max-warnings 0",
     "test": "ava",
@@ -28,6 +30,9 @@
     "express",
     "graphql",
     "operation",
+    "persisted",
+    "queries",
+    "query",
     "storage",
     "store"
   ],
