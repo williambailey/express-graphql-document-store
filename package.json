@@ -1,7 +1,12 @@
 {
   "name": "express-graphql-document-store",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Provides a mechanism to bring persisted documents/queries to express-graphql",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/williambailey/express-graphql-document-store.git"
+  },
   "main": "./dist/index.js",
   "directories": {
     "lib": "./dist"
@@ -20,6 +25,7 @@
     "clean": "rm -rf dist tsconfig.tsbuildinfo",
     "build": "npm run lint && npm run tsc && npm run test",
     "lint": "eslint ./src --ext .ts --max-warnings 0",
+    "prepublishOnly": "./resources/prepublish.sh",
     "test": "ava",
     "tsc": "tsc"
   },
@@ -36,7 +42,6 @@
     "storage",
     "store"
   ],
-  "license": "BSD-3-Clause",
   "devDependencies": {
     "@types/express-graphql": "^0.8.0",
     "@types/graphql": "^14.2.0",
