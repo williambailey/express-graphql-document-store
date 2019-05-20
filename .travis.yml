@@ -1,9 +1,14 @@
 language: node_js
-
-# https://github.com/nodejs/Release
 node_js:
-  - '12'
-  - '10'
-
+- '12'
+- '10'
 script:
-  - npm run build
+- npm run build
+deploy:
+  provider: npm
+  email: mail@williambailey.org.uk
+  api_key:
+    secure: QG/odrUXmNDIIEWaNoKIqJkUwkJvd70jDuT4Q5ipkrvPlK5cXSOqzCDqiCsFKzDiSsoDfCrqKyYYT6+eMVVqt+oqqZfRRcsTxbD2OxZEebC1pZmbHwljKgxn8a09x+50SVnqzRpGsLe3D66sTTOps5E6rqFOikjnKoZLF01IiLDaU9fsXjQJ2J6ChB19poD0N/ar7hCcrTEkN6O5JxxMxKaicqoHJCmjam9NmIAR06YS2xY9O6aHigYnH4rcrPKWFmYbB2N3/nFWTxNsRKbnmrB8dUVBZZKUHx+Q3rgVOrf9UVXUSnkZ1P6fULxOfYs/AQh4pEQCA8XCAHquqdzxro0fP9UAXrdwBDri8WdvWlDHSZOk3X45hTKRJzgH/aBLsaBJWwt7osUgUxHQwfK3icGAJ9T96W2pzQCCBQ6fA9rdYRnuqAVcQgmhje3g05QhXLWyOeLTb1uamY/fmF3tOUwj0PYLgqyb5vftXlVwdXcIm1GpZO4yF0iVKzyRyiUGsjXbxIBkkMr779xZh8pLPFBZ7IYf2W5Xv8H0pkBh1ORPw2023XTGOEt9EhRcIUuAZ+UDADjrxBsupsTro2MJT96J4ZK+4rW0D4qT262KyX3/XLGhLOFbV/IuijB462bFQ8z/NYvQBFEBJn+Nl8RHdJTNpFcU4HL//Qc+H/r+pHw=
+  on:
+    tags: true
+    repo: williambailey/express-graphql-document-store
